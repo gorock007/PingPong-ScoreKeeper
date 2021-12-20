@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreKeeper</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+</head>
+<body>
+    <!-- Bulma Card -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+ <!--------------- Form Controls ------------->
+                <div class="column field is-2">
+                    <label class="label">Player Name1</label>
+                    <div class="control">
+                    <input id="inputName1" class="input" type="text" placeholder="Enter Name">
+                    </div>
+
+                    <button id="name1" class="button is-dark is-fullwidth is-down mt-3">Add</button>
+                </div>
+                   
+                <div class="column field is-2">
+                    <label class="label">Player Name2</label>
+                    <div class="control">
+                      <input id="inputName2" class="input" type="text" placeholder="Enter Name">
+                    </div>
+
+                    <button id="name2" class="button is-dark is-fullwidth mt-3">Add</button>
+                  </div>
+    <!--------------------------->
+                    <!-- Card -->
+                <div class="column is-half is-offset-one-tenth">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="https://images.unsplash.com/photo-1558433916-90a36b44753f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGluZyUyMHBvbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                          <p class="card-header-title">
+                            Ping Pong Score keeper
+                          </p>
+                        </header>
+                        <div class="card-content">
+                          <div class="content">
+                            <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                            <p class="subtitle">Use the buttons below to keep score</p>
+                            
+                            <label for="playto" class="label is-large is-inline">Playing To</label>
+                            <div class="select is-rounded">
+                                <select name="" id="playto">
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>
+                            </div>
+    
+                        </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button id="p1Button" class="button is-info card-footer-item ">Player One</button>
+                            <button id="p2Button" class="button is-primary card-footer-item">Player Two</button>
+                            <!-- <button id="p3Button" class="button is-warning card-footer-item">Player Three</button> -->
+                            <button id="reset" class="button is-danger card-footer-item ">Reset</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+<!-- -----------------TABLE CONTENT -->
+            <div class="columns">
+                <div class="column is-6  is-offset-4">
+                    <table id="table" class="table is-fullwidth is-striped is-hoverable">
+                        <thead>
+                            <tr>
+                                <th>Numeber</th>
+                                <th>Winner</th>
+                                <th>ScoreBoard</th>
+                            </tr>
+                        </thead> 
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- End Card-->
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
